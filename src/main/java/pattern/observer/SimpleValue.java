@@ -18,7 +18,7 @@ public class SimpleValue implements Observable {
 	public void setValue(int value) {
 		System.out.println("Changing value Subject value to: " + value);
 		this.value = value;
-		notifyObservers();
+		notifyObservers(value);
 	}
 
 	public void register(Observer o) {
@@ -29,7 +29,7 @@ public class SimpleValue implements Observable {
 		observers.remove(o);
 	}
 
-	public void notifyObservers() {
-		observers.forEach(Observer::update);
+	public void notifyObservers(int value) {
+		observers.forEach(observer -> observer.update(value));
 	}
 }

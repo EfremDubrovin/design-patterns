@@ -9,5 +9,5 @@ public interface Observable {
 
 	void unRegister(Observer o);
 
-	void notifyObservers();
+	void notifyObservers(int value);
 }
