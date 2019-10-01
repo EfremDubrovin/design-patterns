@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 class ChristmasDiscounter implements Discounter {
 	@Override
-	public BigDecimal applyDiscount(final BigDecimal amount) {
+	public BigDecimal apply(final BigDecimal amount) {
 		return amount.multiply(BigDecimal.valueOf(0.9));
 	}
 }
