@@ -6,6 +6,7 @@
 
 	<groupId>eu.deltasource</groupId>
 	<artifactId>patterns</artifactId>
+	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
 
 	<build>
@@ -20,6 +21,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<modules>
+		<module>persistence</module>
+		<module>service</module>
+		<module>application</module>
+	</modules>
 
 	<dependencies>
 		<dependency>
